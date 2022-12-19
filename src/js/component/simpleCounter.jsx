@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import ReactDOM from "react-dom"
 
 //create your first component
-const Home = (props) => {
+const SimpleCounter = (props) => {
 	return (
 		<div className="main-container">
 			<div className="counter">
@@ -22,7 +22,7 @@ const Home = (props) => {
 	);
 };
 
-Home.propTypes = {
+SimpleCounter.propTypes = {
 	digit1: PropTypes.number,
 	digit2: PropTypes.number,
 	digit3: PropTypes.number,
@@ -44,8 +44,6 @@ setInterval(function () {
 
 	counter++
 
-ReactDOM.render(<Home digit1 = {one} digit2 = {two} digit3 = {three} digit4 = {four} digit5 = {five} digit6 = {six}  />, document.querySelector("#app"));
+ReactDOM.render(<SimpleCounter digit1 = {one} digit2 = {two} digit3 = {three} digit4 = {four} digit5 = {five} digit6 = {six}  />, document.querySelector("#counter"));
 },1000)
-
-
 
